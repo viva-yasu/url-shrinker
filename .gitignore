@@ -46,5 +46,8 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 
+# for my lib
 index.php
 vendor
+composer.lock
+composer.phar
