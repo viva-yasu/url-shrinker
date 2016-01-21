@@ -8,8 +8,13 @@ namespace UriShrinker;
 
 class UriShrinker
 {
+    /** @var $api_key string URL Shortener API key(Google) */
     private $api_key;
+
+    /** @var $before_url string original URL */
     private $before_url;
+
+    /** @var $short_url string processed URL */
     private $short_url;
 
     /**
@@ -24,18 +29,30 @@ class UriShrinker
         $this->_create_short_url();
     }
 
+    /**
+     * short_url getter
+     *
+     * @return string
+     */
     public function getShortUrl()
     {
         return $this->short_url;
     }
 
-
+    /**
+     * creates short URL from original URL
+     */
     private function _create_short_url()
     {
         $tmp = $this->_curl_start();
         $this->short_url = $tmp->id;
     }
 
+    /**
+     * requests Google URL Shortener API
+     *
+     * @return mixed response(PHP object)
+     */
     private function _curl_start()
     {
         $curl = curl_init();
