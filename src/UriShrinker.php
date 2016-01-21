@@ -1,9 +1,6 @@
 <?php
-/**
- * Auth: Yasunari Kondo
- */
 
-namespace UriShrinker;
+namespace VivaYasu\UriShrinker;
 
 
 class UriShrinker
