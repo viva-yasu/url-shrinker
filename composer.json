@@ -1,0 +1,22 @@
+{
+  "name": "viva-yasu/url-shrinker",
+  "description": "generate short URL",
+  "keywords": ["URL", "short URL"],
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/viva-yasu/url-shrinker",
+  "authors": [
+    {
+      "name": "viva-yasu",
+      "email": "kyasunari123v@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "3.7.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "VivaYasu\\UrlShrinker": "src/"
+    }
+  }
+}
