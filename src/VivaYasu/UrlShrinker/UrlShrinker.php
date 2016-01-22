@@ -1,9 +1,9 @@
 <?php
 
-namespace VivaYasu\UriShrinker;
+namespace VivaYasu\UrlShrinker;
 
 
-class UriShrinker
+class UrlShrinker
 {
     /** @var $api_key string URL Shortener API key(Google) */
     private $api_key;
@@ -15,7 +15,7 @@ class UriShrinker
     private $short_url;
 
     /**
-     * UriShrinker constructor.
+     * UrlShrinker constructor.
      * @param $api_key string
      * @param $before_url string
      */
