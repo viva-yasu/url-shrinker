@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-0": {
-      "VivaYasu\\UriShrinker": "src/VivaYasu/UriShrineker"
+      "VivaYasu\\UrlShrinker": "src/"
     }
   }
 }

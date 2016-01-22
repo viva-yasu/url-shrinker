@@ -15,7 +15,7 @@
             <directory>../src/VivaYasu/</directory>
         </whitelist>
     </filter>
-    <testsuite name="VivaYasu\UriShrinker Test Suite">
+    <testsuite name="VivaYasu\UrlShrinker Test Suite">
         <directory>.</directory>
     </testsuite>
 </phpunit>
