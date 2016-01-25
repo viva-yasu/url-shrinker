@@ -53,6 +53,8 @@ class UrlShrinker
     private function _curl_start()
     {
         $curl = curl_init();
+
+        // Google URL ShortenerのAPIにリクエストを飛ばす
         curl_setopt($curl, CURLOPT_URL, 'https://www.googleapis.com/urlshortener/v1/url?key=' . $this->api_key);
         curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-type: application/json'));
         curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
@@ -63,8 +65,10 @@ class UrlShrinker
         curl_setopt($curl, CURLOPT_TIMEOUT, 15);
         curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
         curl_setopt($curl, CURLOPT_MAXREDIRS, 5);
+
         $res1 = curl_exec($curl);
         $res2 = curl_getinfo($curl);
+
         curl_close($curl) ;
 
         $json = substr($res1, $res2['header_size']);
